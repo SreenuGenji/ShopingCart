@@ -63,7 +63,7 @@ const Collections = () => {
         break;
       
       case 'high-low':
-        setFilterProducts(filterProductsCopy.soer((a,b)=>(b.price - a.price)));
+        setFilterProducts(filterProductsCopy.sort((a,b)=>(b.price - a.price)));
         break;
         
       default:
